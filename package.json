@@ -1,0 +1,23 @@
+{
+  "name": "sicpjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex1.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hohoonlee/sicpjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hohoonlee/sicpjs/issues"
+  },
+  "homepage": "https://github.com/hohoonlee/sicpjs#readme",
+  "dependencies": {
+    "sicp": "^1.1.4"
+  }
+}
