@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript"  src="https://rawgit.com/cloudmark/picturelang/master/picture.js"></script>
+    <meta charset="utf-8">
+    <title>Wave Man</title>
+    <script>
+        document.addEventListener('load', () => {
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            var frame = new Frame(ctx, new Vector2(0, 0), new Vector2(240,0), new Vector2(0,240));
+            var painter =Wave();
+            painter(frame)
+        });
+    </script>
+</head>
+<body>
+<canvas id="canvas" width="480" height="480" style="border:1px solid #d3d3d3;"></canvas>
+</body>
+</html>
