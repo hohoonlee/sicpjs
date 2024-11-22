@@ -176,3 +176,27 @@ probe('Celsius temp', C);
 probe('Fahrenheit temp', F);
 
 set_value(C, 25, 'user');
+
+//ex 3.33
+console.log('ex 3.33');
+const averager = (a, b, c) => {
+    const s = make_connector();
+    const w = make_connector();
+    
+    constant(0.5, w);
+    adder(a, b, s);
+    multiplier(s, w, c);
+
+    return 'ok';
+}
+const A = make_connector();
+const B = make_connector();
+const AVG = make_connector();
+averager(A, B, AVG);
+
+probe('Average', AVG);
+set_value(A, 25, 'user');
+set_value(B, 1, 'user');
+
+forget_value(A, 'user');
+set_value(A, 99, 'user');
